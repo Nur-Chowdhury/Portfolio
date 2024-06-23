@@ -9,7 +9,7 @@ export default function Hero() {
     <div className=' grid md:grid-cols-2 place-items-center max-w-[1250px] mx-auto  mb-8 md:mb-32 mt-14'>
       <div className=' max-w-[800px]'>
         <p className=' text-gray-200 md:text-6xl text-3xl -tracking-tight'>
-            HEY, I AM <br />
+            HI! I AM <br />
             <span>NAYAMAT ULLAH CHOWDHURY</span> <br />
             <TypeAnimation 
                 sequence={[
