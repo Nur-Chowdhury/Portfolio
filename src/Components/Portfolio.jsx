@@ -45,7 +45,7 @@ const fsproj = [
     {
         img: fs4,
         title: "Project #4",
-        des: "Full stack MERN Social Media appliction with Profile Update, Post blog, Liking & Commenting, Find Users using various info, Contact with Users etc. features.",
+        des: "Full stack MERN Social Media appliction with features like Profile Update, Post blog, Liking & Commenting, Find Users using various info, Contact with Users etc.",
         links: {
             site: "",
             github: "https://github.com/Nur-Chowdhury/CUET-Community"
