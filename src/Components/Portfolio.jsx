@@ -9,6 +9,7 @@ import fr5 from '../assets/frontpage.png'
 import fs1 from '../assets/pokedex.png'
 import fs2 from '../assets/chatapp.png'
 import fs3 from '../assets/cpf.png'
+import fs4 from '../assets/CUET_Community.png'
 
 import {AiFillGithub} from 'react-icons/ai'
 
@@ -39,6 +40,15 @@ const fsproj = [
         links: {
             site: "",
             github: "https://github.com/Nur-Chowdhury/cpf-mf"
+        }
+    },
+    {
+        img: fs4,
+        title: "Project #4",
+        des: "Full stack MERN Social Media appliction with Profile Update, Post blog, Liking & Commenting, Find Users using various info, Contact with Users etc. features.",
+        links: {
+            site: "",
+            github: "https://github.com/Nur-Chowdhury/CUET-Community"
         }
     },
 ]
