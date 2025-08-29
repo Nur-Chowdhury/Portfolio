@@ -1,9 +1,6 @@
 import React from 'react'
-import pr1 from '../assets/pokedex.png'
-import pr2 from '../assets/spaceview.png'
-import pr3 from '../assets/chatapp.png'
-import pr4 from '../assets/cpf.png'
 
+import { BsAwardFill, BsFillBriefcaseFill, BsGearFill } from "react-icons/bs";
 import {
     DiJavascript1,
     DiReact,
@@ -11,140 +8,90 @@ import {
     DiHtml5,
     DiCss3,
     DiSass,
-    DiBootstrap,
     DiMongodb,
-    DiGithubBadge,
-    DiMysql,
     DiPython,
-    DiJava,
 } from 'react-icons/di';
+import { BiLogoPostgresql } from "react-icons/bi";
 import { SiExpress, SiCplusplus, SiTypescript,
-    SiFirebase, SiGoogleauthenticator, SiSpringboot,
-    SiThymeleaf, SiMysql } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+    SiMysql, SiNextdotjs } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri"
 
 export default function About() {
-  return (
-    <div className=' max-w-[1300px] mx-auto p-6 grid md:grid-cols-2 gap-8 place-items-center' id='about'>
-      <div className=' md:hidden  bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 flex flex-wrap gap-4 text-4xl justify-center'>
-        <DiHtml5 className=' text-orange-600'/>
-        <DiCss3 className=' text-blue-600'/>
-        <RiTailwindCssFill className=' text-blue-800'/>
-        <DiJavascript1 className=' text-yello-500'/>
-        <SiTypescript className=' text-blue-500'/>
-
-        <DiReact className=' text-blue-700'/>
-        <SiExpress className=' text-orange-600'/>
-        <DiNodejsSmall className=' text-green-500'/>
-        <SiCplusplus className=' text-blue-800'/>
-        <DiPython className=' text-blue-800'/>        
-      </div>
-
-      {/* 1st */}
-
-      <div className=' relative group'>
-        <div className=' w-full h-full absolute -inset-1 bg-gradient-to-r from-teal-100 to-teal-900 rounded
-         blur opacity-25 group-hover:opacity-100 transition duration-300'></div>
-
-        <div className=' relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-bg rounded'>
-          <img src={pr1} alt='project 1' className=' rounded md:max-w-[500px]' />
+    return (
+        <div className='  max-w-[1250px] mx-auto p-6 md:my-20 flex flex-col justify-center items-center' id='about'>
+            <h1 className='w-full text-center text-gray-200 text-5xl my-8'>
+                About Me
+            </h1>
+            <div className=' w-full flex flex-col md:flex-row justify-between gap-4'>
+                <div className=' w-full md:w-[55%] flex flex-col justify-center items-center gap-4'>
+                    <p className=' w-full text-gray-200 text-justify'>
+                        Hi! I’m Nayamat Ullah Chowdhury Nur, a 4th-year CSE student at CUET, Bangladesh with a passion for building 
+                        scalable web applications and exploring AI-driven solutions. Currently, I contribute as a Volunteer Developer 
+                        at YouthNotion’s Dev Team, where I collaborate on impactful projects that enhance user experiences. Alongside 
+                        development, I’m pursuing research in federated learning and human fall detection, aiming to publish in 
+                        Q2-ranked journals. Beyond tech, I enjoy reading fictional, historical, and motivational books, which inspire 
+                        creativity and broaden my perspective.
+                    </p>
+                    <p className=' w-full text-gray-200 text-justify'>
+                        I’m always open to collaboration and new opportunities—whether in development, research, or innovative projects 
+                        that push boundaries.
+                    </p>  
+                </div>
+                <div className=' w-full md:w-[42%] flex flex-col gap-8'>
+                    <div className=' w-full flex flex-wrap justify-between'>
+                        
+                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
+                            hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
+                        >
+                            <BsAwardFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-300' />
+                            <p className='text-gray-200 text-2xl font-medium transition-colors duration-700 group-hover:text-blue-300'>
+                                Experience
+                            </p>       
+                            <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
+                                3+ Years
+                            </p>
+                        </div>
+                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
+                            hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
+                        >
+                            <BsFillBriefcaseFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-500' />
+                            <p className='text-gray-200 text-2xl font-medium transition-colors duration-700 group-hover:text-blue-500'>
+                                Completed
+                            </p>       
+                            <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
+                                15+ Projects
+                            </p>
+                        </div>
+                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
+                            hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
+                        >
+                            <BsGearFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-500' />
+                            <p className='text-gray-200 text-2xl font-medium transition-colors duration-700 group-hover:text-blue-500'>
+                                Skills
+                            </p>       
+                            <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
+                                15+ Tools
+                            </p>
+                        </div>
+                    </div>
+                    <div className=' w-full bg-white bg-opacity-5 hover:bg-opacity-10 backdrop-blur-lg rounded-lg p-6 flex flex-wrap gap-4 text-4xl justify-center'>
+                        <SiCplusplus className=' text-blue-800'/>
+                        <DiPython className=' text-blue-800'/>
+                        <DiHtml5 className=' text-orange-600'/>
+                        <DiCss3 className=' text-blue-600'/>
+                        <RiTailwindCssFill className=' text-blue-800'/>
+                        <DiJavascript1 className=' text-yello-500'/>
+                        <SiTypescript className=' text-blue-500'/>
+                        <DiReact className=' text-blue-400'/>
+                        <SiExpress className=' text-black font-extrabold'/>
+                        <DiNodejsSmall className=' text-green-500'/> 
+                        <SiNextdotjs className=' text-black'/> 
+                        <DiMongodb className=' text-green-600'/>
+                        <SiMysql className=' text-blue-600 text-5xl'/> 
+                        <BiLogoPostgresql className=' text-blue-800 text-4xl'/>   
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div className=' p-6'>
-        <h2 className=' text-gray-200 text-3xl font-bold mb-4'>Illustration</h2>
-        <p className=' text-gray-300 mb-4'>
-          This is a fullstack <span className=' text-blue-500'>react</span>, <span className=' text-orange-300'>firebase</span> and
-          <span className=' text-orange-300'>Google Authentication</span> based project inspired from one of the best anime, pokemon.
-          This is a pokemon Encyclopedia where you can search, compare and add a pokemon to your list.
-        </p>
-        <div className=' md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-          <DiJavascript1 className=' text-yello-500'/>
-          <DiReact className=' text-blue-700'/>
-          <DiSass className=' text-pink-600'/>
-          <SiFirebase className=' text-orange-300'/>
-          <SiGoogleauthenticator className=' text-orange-400'/>
-        </div>
-      </div>
-
-      {/* 2nd */}
-
-      <div className=' p-6'>
-        <h2 className=' text-gray-200 text-3xl font-bold mb-4'>Illustration</h2>
-        <p className=' text-gray-300 mb-4'>
-          This is project was intended to build a responsive Frontend website with
-          <span className=' text-blue-500'> React</span> and <span className=' text-blue-700'>Tailwind CSS</span>.
-           AOS library was used to add scroll animation.
-        </p>
-        <div className=' md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-          <DiJavascript1 className=' text-yello-500'/>
-          <DiReact className=' text-blue-700'/>
-          <RiTailwindCssFill className=' text-blue-800'/>
-        </div>
-      </div>
-
-      <div className=' relative group'>
-        <div className=' w-full h-full absolute -inset-1 bg-gradient-to-r from-teal-100 to-teal-900 rounded
-         blur opacity-25 group-hover:opacity-100 transition duration-300'></div>
-
-        <div className=' relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-bg rounded'>
-          <img src={pr2} alt='project 1' className=' rounded md:max-w-[500px]' />
-        </div>
-      </div>
-
-      {/* 3rd */}
-
-      <div className=' relative group'>
-        <div className=' w-full h-full absolute -inset-1 bg-gradient-to-r from-teal-100 to-teal-900 rounded
-         blur opacity-25 group-hover:opacity-100 transition duration-300'></div>
-
-        <div className=' relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-bg rounded'>
-          <img src={pr3} alt='project 1' className=' rounded md:max-w-[500px]' />
-        </div>
-      </div>
-
-      <div className=' p-6'>
-        <h2 className=' text-gray-200 text-3xl font-bold mb-4'>Illustration</h2>
-        <p className=' text-gray-300 mb-4'>
-          This is a fullstack webapp developed bu using MERN stack. Registered user can message each other in this application.
-        </p>
-        <div className=' md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-          <DiJavascript1 className=' text-yello-500'/>
-          <DiReact className=' text-blue-700'/>
-          <DiSass className=' text-pink-600'/>
-          <DiNodejsSmall className=' text-green-500'/>
-          <SiExpress className=' text-orange-600'/>
-          <DiMongodb className=' text-green-700'/>
-        </div>
-      </div>
-
-      {/* 4th */}
-
-      <div className=' p-6'>
-        <h2 className=' text-gray-200 text-3xl font-bold mb-4'>Illustration</h2>
-        <p className=' text-gray-300 mb-4'>
-          This fullstack <span className=' text-green-500'>springboot</span> project was inspired to make the life of the competitive programmers life easier.
-          In this platform users can: find a contest, notify a contest, teach others or, find a mentor etc.
-        </p>
-        <div className=' md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-          <DiHtml5 className=' text-orange-600'/>
-          <DiCss3 className=' text-blue-600'/>
-          <DiJava className=' text-blue-500'/>
-          <SiSpringboot className=' text-green-500'/>
-          <SiMysql className=' text-blue-600' size={45}/>
-        </div>
-      </div>
-
-      <div className=' relative group'>
-        <div className=' w-full h-full absolute -inset-1 bg-gradient-to-r from-teal-100 to-teal-900 rounded
-         blur opacity-25 group-hover:opacity-100 transition duration-300'></div>
-
-        <div className=' relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-bg rounded'>
-          <img src={pr4} alt='project 1' className=' rounded md:max-w-[500px]' />
-        </div>
-      </div>
-
-      
-    </div>
-  )
+    )
 }

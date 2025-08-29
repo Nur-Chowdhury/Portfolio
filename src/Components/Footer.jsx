@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -10,13 +10,16 @@ export default function Footer() {
               <a href='/' className=' font-bold text-blue-600'>C.<span className=' text-pink-200'>Nur</span></a>
             </h3>
             <div className=' flex flex-row gap-6 text-gray-400 text-4xl'>
-                <a href='https://github.com/Nur-Chowdhury'><FaGithubSquare /></a>
-                <a href='https://www.facebook.com/n0.or.chowdhury/'><FaFacebookSquare /></a>
-                <a href='https://www.linkedin.com/in/n0or-chowdhury/'><FaLinkedin /></a>
+                <a href='https://github.com/Nur-Chowdhury' className=' text-black'><FaGithubSquare className=' bg-white' /></a>
+                <a href='https://www.facebook.com/n0.or.chowdhury/' className=' text-blue-700'><FaFacebookSquare /></a>
+                <a href='https://www.linkedin.com/in/n0or-chowdhury/' className=' text-blue-500'><FaLinkedin /></a>
+                <a href='https://wa.me/8801621777924' target='_blank' rel='noopener noreferrer' className=' text-green-500'>
+                  <FaWhatsappSquare  />
+                </a>
             </div>
         </div>
 
-        <p className=' text-gray-400 space-y-2'>@ 2024 C.Nur</p>
+        <p className=' text-gray-400 space-y-2'>@ 2025 C.Nur</p>
     </div>
   )
 }
