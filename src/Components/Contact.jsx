@@ -4,7 +4,7 @@ import { FaFacebookMessenger } from "react-icons/fa6";
 
 export default function Contact() {
   return (
-    <div className=' glass px-6 max-w-[1000px] mx-auto flex flex-col md:flex-row place-items-center justify-between' id='contact'>
+    <div className=' glass px-6 max-w-[1000px] mx-6  md:mx-auto flex flex-col md:flex-row place-items-center justify-between' id='contact'>
         <div className=' flex flex-col gap-4 py-2'>
             <h1 className=' text-xl'>Message me At:</h1>
             <div className=" flex gap-5">

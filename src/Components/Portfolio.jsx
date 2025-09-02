@@ -159,33 +159,33 @@ export default function Portfolio() {
     },[type])
 
     return (
-    <div className=' w-full flex flex-col justify-center items-center mx-auto p-6 md:my-20 ' id='portfolio'>
+    <div className=' w-full max-w-[1250px] flex flex-col justify-center items-center mx-auto p-6 md:my-20 ' id='portfolio'>
         <div className='w-full max-w-[600px] flex justify-center items-center'>
             <h1 className=' text-gray-200 text-5xl my-4'>
                 My Projects
             </h1>
         </div>
 
-        <div className=' my-12 flex flex-col sm:flex-row justify-center gap-12 md:gap-40 w-full max-w-[600px]'>
+        <div className='my-12 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-12 md:gap-40 w-full'>
             <h1 className={` text-gray-200 text-4xl 
                 transition duration-300 cursor-pointer px-4
-                 hover:text-blue-800 ${type===1 ? " border-b-4 border-blue-600":""}`}
+                 hover:text-blue-800 ${type===1 ? " px-20 border-b-4 border-blue-600":""}`}
                  onClick={() => setType(1)}
             >
                 Full Stack
             </h1>
             <h1 className={` text-gray-200 text-4xl 
                 transition duration-300 cursor-pointer px-4
-                 hover:text-blue-800 ${type===2 ? " border-b-4 border-blue-600":""}`}
+                 hover:text-blue-800 ${type===2 ? " px-20 border-b-4 border-blue-600":""}`}
                  onClick={() => setType(2)}
             >
                 Frontend
             </h1>
         </div>
-        <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-col  sr850:flex-row items-center'>
             <div className=' glass p-6 w-full border-2  max-w-[700px] flex flex-col justify-between'>
                 <div className=' w-full h-full flex flex-col'>
-                    <img src={currentProject.img} alt='project 1' className=' w-full h-[500px] rounded' />
+                    <img src={currentProject.img} alt='project 1' className=' w-full h-[250px] md:h-[500px] rounded' />
                     <p className=' text-gray-200 my-4'>{currentProject.des}</p>
                 </div>
 
@@ -195,7 +195,7 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <ul className=' ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1'>
+            <ul className=' ml-6 flex flex-wrap sr850:flex-col gap-6 justify-center mt-4 md:gap-1'>
                 {
                     type===2 ? (
                         frproj.map((proj, index) => (

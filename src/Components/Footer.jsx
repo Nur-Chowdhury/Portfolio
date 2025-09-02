@@ -10,12 +10,18 @@ export default function Footer() {
               <a href='/' className=' font-bold text-blue-600'>C.<span className=' text-pink-200'>Nur</span></a>
             </h3>
             <div className=' flex flex-row gap-6 text-gray-400 text-4xl'>
-                <a href='https://github.com/Nur-Chowdhury' className=' text-black'><FaGithubSquare className=' bg-white' /></a>
-                <a href='https://www.facebook.com/n0.or.chowdhury/' className=' text-blue-700'><FaFacebookSquare /></a>
-                <a href='https://www.linkedin.com/in/n0or-chowdhury/' className=' text-blue-500'><FaLinkedin /></a>
-                <a href='https://wa.me/8801621777924' target='_blank' rel='noopener noreferrer' className=' text-green-500'>
-                  <FaWhatsappSquare  />
-                </a>
+              <a href='https://www.linkedin.com/in/n0or-chowdhury/' className=' text-blue-500 transition-transform duration-300 hover:scale-110'>
+                <FaLinkedin />
+              </a>
+              <a href='https://wa.me/8801621777924' target='_blank' rel='noopener noreferrer' className=' text-green-500 transition-transform duration-300 hover:scale-110'>
+                <FaWhatsappSquare  />
+              </a>
+              <a href='https://github.com/Nur-Chowdhury' className=' transition-transform duration-300 hover:scale-110'>
+                <FaGithubSquare className='text-white ' />
+              </a>
+              <a href='https://www.facebook.com/n0.or.chowdhury/' className=' text-blue-700 transition-transform duration-300 hover:scale-110'>
+                <FaFacebookSquare />
+              </a>
             </div>
         </div>
 

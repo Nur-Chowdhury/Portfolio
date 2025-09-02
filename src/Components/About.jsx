@@ -38,9 +38,10 @@ export default function About() {
                     </p>  
                 </div>
                 <div className=' w-full md:w-[42%] flex flex-col gap-8'>
-                    <div className=' w-full flex flex-wrap justify-between'>
+                    <div className='w-full flex flex-wrap gap-2 justify-center md:justify-between'>
+                    {/* <div className=' w-full flex flex-wrap gap-2'> */}
                         
-                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
+                        <div className='group flex-[1_1_30%] flex flex-col justify-center items-center gap-1 py-4 px-2 border-2 border-gray-200 rounded-lg
                             hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
                         >
                             <BsAwardFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-300' />
@@ -51,18 +52,7 @@ export default function About() {
                                 3+ Years
                             </p>
                         </div>
-                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
-                            hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
-                        >
-                            <BsFillBriefcaseFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-500' />
-                            <p className='text-gray-200 text-2xl font-medium transition-colors duration-700 group-hover:text-blue-500'>
-                                Completed
-                            </p>       
-                            <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
-                                15+ Projects
-                            </p>
-                        </div>
-                        <div className='group w-[150px] flex flex-col justify-center items-center gap-1 py-4 border-2 border-gray-200 rounded-lg
+                        <div className='group flex-[1_1_30%] flex flex-col justify-center items-center gap-1 py-4 px-2 border-2 border-gray-200 rounded-lg
                             hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
                         >
                             <BsGearFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-500' />
@@ -71,6 +61,17 @@ export default function About() {
                             </p>       
                             <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
                                 15+ Tools
+                            </p>
+                        </div>
+                        <div className='group flex-[1_1_30%] flex flex-col justify-center items-center gap-1 py-4 px-2 border-2 border-gray-200 rounded-lg
+                            hover:scale-105 cursor-pointer transition-all duration-700 hover:border-blue-500'
+                        >
+                            <BsFillBriefcaseFill size={40} className='text-gray-200 transition-colors duration-700 group-hover:text-blue-500' />
+                            <p className='text-gray-200 text-2xl font-medium transition-colors duration-700 group-hover:text-blue-500'>
+                                Completed
+                            </p>       
+                            <p className='text-gray-300 text-base transition-colors duration-700 group-hover:text-blue-300'>
+                                15+ Projects
                             </p>
                         </div>
                     </div>
