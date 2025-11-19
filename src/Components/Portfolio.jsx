@@ -14,14 +14,24 @@ import fs1 from '../assets/pokedex.png'
 import fs2 from '../assets/chatapp.png'
 import fs3 from '../assets/cpf.png'
 import fs4 from '../assets/CUET_Community.png'
+import fs9 from '../assets/offitrack.png'
 
 import {AiFillGithub} from 'react-icons/ai'
 
 
 const fsproj = [
     {
-        img: fs7,
+        img: fs9,
         title: "Project #1",
+        des: "Full-stack Office Asset & Resource Management System using Next.js, Prisma, and PostgreSQL.",
+        links: {
+            site: "https://offitrack.vercel.app/",
+            github: "https://github.com/Nur-Chowdhury/offitrack"
+        }
+    },
+    {
+        img: fs7,
+        title: "Project #2",
         des: "Full stack Personal Branding Website using Next.js and Tailwind CSS.",
         links: {
             site: "https://portfolio-nine-blush-59.vercel.app/",
@@ -30,7 +40,7 @@ const fsproj = [
     },
     {
         img: fs6,
-        title: "Project #2",
+        title: "Project #3",
         des: "Full stack Online Survey Portal using MERN and Tailwind CSS.",
         links: {
             site: "https://pro-ih0w.onrender.com",
@@ -39,7 +49,7 @@ const fsproj = [
     },
     {
         img: fs5,
-        title: "Project #3",
+        title: "Project #4",
         des: "Full stack Real Estate Listing & Vendor Platform using MERN and Tailwind CSS.",
         links: {
             site: "https://realestate-8xp3.onrender.com/",
@@ -48,7 +58,7 @@ const fsproj = [
     },
     {
         img: fs4,
-        title: "Project #4",
+        title: "Project #5",
         des: "Full stack MERN Social Media appliction with features like Profile Update, Post, Liking & Commenting, Find Users using various info, Chat with Users etc.",
         links: {
             site: "https://cuet-community.onrender.com/",
@@ -57,7 +67,7 @@ const fsproj = [
     },
     {
         img: fs8,
-        title: "Project #5",
+        title: "Project #6",
         des: "Full stack Smart Tuition Hub using MERN and Tailwind CSS.",
         links: {
             site: "https://tutor-management-dj33.onrender.com/",
@@ -66,7 +76,7 @@ const fsproj = [
     },
     {
         img: fs1,
-        title: "Project #6",
+        title: "Project #7",
         des: "Full stack Pokedex website using React, SCSS & Firebase.",
         links: {
             site: "https://pokedex-2fe9f.web.app/",
@@ -75,7 +85,7 @@ const fsproj = [
     },
     {
         img: fs3,
-        title: "Project #7",
+        title: "Project #8",
         des: "Full stack website for finding & Notifying Programming Contests & Finding Mentors using HTML, CSS & Springboot.",
         links: {
             site: "",
@@ -84,7 +94,7 @@ const fsproj = [
     },
     {
         img: fs2,
-        title: "Project #8",
+        title: "Project #9",
         des: "Full Stack Chat app MERN stack & SCSS",
         links: {
             site: "",
