@@ -26,7 +26,7 @@ export default function Hero() {
             className='font-bold italic'
           />
         </p>
-        <h2 className='text-gray-300'>With 3+ years of experience</h2>
+        <h2 className='text-gray-300'>With 2+ years of experience</h2>
 
         <div className='flex flex-row gap-4 mb-4'>
           <a className=' w-1/2' href={CV} download={"Nayamat_Ullah_Chowdhury_CV.pdf"}>
